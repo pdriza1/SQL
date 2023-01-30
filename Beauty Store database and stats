@@ -1,0 +1,39 @@
+/** Store database
+Bronzer
+Eyeshadow palette
+Lipstick
+Mascara
+Setting spray
+Highlighter
+Eyeliner
+Liquid Eyeliner
+Blush
+Primer
+Moisturizer
+Lipliner 
+Hairspray
+Concealer
+Single Eyeshadow
+**/
+
+CREATE TABLE beauty_items (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, rating INTEGER ); 
+
+INSERT INTO beauty_items VALUES (1, "Bronzer", 6, 25, 5);
+INSERT INTO beauty_items VALUES (2, "Eyeshadow palette" ,5, 23, 4);
+INSERT INTO beauty_items VALUES (3, "Lipstick" , 20, 15, 4);
+INSERT INTO beauty_items VALUES (4, "Mascara" , 15, 5, 5);
+INSERT INTO beauty_items VALUES (5, "Setting spray" , 20, 5, 5);
+INSERT INTO beauty_items VALUES (6, "Highlighter" , 17, 5, 5);
+INSERT INTO beauty_items VALUES (7, "Eyeliner" , 11, 12, 4);
+INSERT INTO beauty_items VALUES (8, "Liquid Eyeliner" , 14, 5, 5);
+INSERT INTO beauty_items VALUES (9, "Blush" , 11, 12, 4);
+INSERT INTO beauty_items VALUES (10, "Primer" , 13, 10, 5);
+INSERT INTO beauty_items VALUES (11, "Moisturizer", 22, 5, 3);
+INSERT INTO beauty_items VALUES (12, "Lipliner", 12, 11, 4);
+INSERT INTO beauty_items VALUES (13, "Hairspray", 10, 5, 3);
+INSERT INTO beauty_items VALUES (14, "Concealer", 12, 10, 2);
+INSERT INTO beauty_items VALUES (15, "Single Eyeshadow", 8, 4, 5);
+
+SELECT * FROM beauty_items;
+SELECT * FROM beauty_items ORDER BY price asc; 
+SELECT * FROM beauty_items WHERE quantity <10 ORDER BY quantity asc; 
